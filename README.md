@@ -1,4 +1,4 @@
-# spring-boot-starter-maven-embedder
+# maven-embedder-spring-boot-starter
 Spring Boot Starter For Maven Embedder
 
 ### 说明
@@ -13,7 +13,7 @@ Spring Boot Starter For Maven Embedder
 ``` xml
 <dependency>
 	<groupId>${project.groupId}</groupId>
-	<artifactId>spring-boot-starter-maven-embedder</artifactId>
+	<artifactId>maven-embedder-spring-boot-starter</artifactId>
 	<version>${project.version}</version>
 </dependency>
 ```
