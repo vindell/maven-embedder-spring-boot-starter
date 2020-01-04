@@ -24,7 +24,7 @@ import org.springframework.core.io.Resource;
 import org.springframework.util.Assert;
 import org.springframework.util.StringUtils;
 
-/**
+/*
  * A {@link Resource} implementation for resolving an artifact via maven coordinates.
  * <p>
  * The {@code MavenResource} class contains <a href="https://maven.apache.org/pom.html#Maven_Coordinates">
@@ -56,38 +56,38 @@ public class MavenResource {
 
 	public static String URI_SCHEME = "maven";
 
-	/**
+	/*
 	 * The default extension for the artifact.
 	 */
 	final static String DEFAULT_EXTENSION = "jar";
 
-	/**
+	/*
 	 * String representing an empty classifier.
 	 */
 	final static String EMPTY_CLASSIFIER = "";
 
-	/**
+	/*
 	 * Group ID for artifact; generally this includes the name of the
 	 * organization that generated the artifact.
 	 */
 	private final String groupId;
 
-	/**
+	/*
 	 * Artifact ID; generally this includes the name of the app or library.
 	 */
 	private final String artifactId;
 
-	/**
+	/*
 	 * Extension of the artifact.
 	 */
 	private final String extension;
 
-	/**
+	/*
 	 * Classifier of the artifact.
 	 */
 	private final String classifier;
 
-	/**
+	/*
 	 * Version of the artifact.
 	 */
 	private final String version;
@@ -134,35 +134,35 @@ public class MavenResource {
 		this.repositoryId = repositoryId;
 	}
 
-	/**
+	/*
 	 * @see #groupId
 	 */
 	public String getGroupId() {
 		return groupId;
 	}
 
-	/**
+	/*
 	 * @see #artifactId
 	 */
 	public String getArtifactId() {
 		return artifactId;
 	}
 
-	/**
+	/*
 	 * @see #extension
 	 */
 	public String getExtension() {
 		return extension;
 	}
 
-	/**
+	/*
 	 * @see #version
 	 */
 	public String getClassifier() {
 		return classifier;
 	}
 
-	/**
+	/*
 	 * @see #version
 	 */
 	public String getVersion() {
@@ -239,7 +239,7 @@ public class MavenResource {
 		return result;
 	}
 
-	/**
+	/*
 	 * Returns the coordinates encoded as
 	 * &lt;groupId&gt;:&lt;artifactId&gt;[:&lt;extension&gt;[:&lt;classifier&gt;]]:&lt;version&gt;,
 	 * conforming to the <a href="https://www.eclipse.org/aether">Aether</a> convention.
@@ -251,7 +251,7 @@ public class MavenResource {
 				String.format("%s:%s:%s:%s", groupId, artifactId, extension, version);
 	}
 
-	/**
+	/*
 	 * Create a {@link MavenResource} for the provided coordinates and properties.
 	 *
 	 * @param filepath the path for the file
