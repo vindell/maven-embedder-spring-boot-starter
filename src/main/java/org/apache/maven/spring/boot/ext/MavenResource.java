@@ -16,13 +16,12 @@
 package org.apache.maven.spring.boot.ext;
 
 
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-
 import org.apache.commons.io.FilenameUtils;
-import org.springframework.core.io.Resource;
 import org.springframework.util.Assert;
 import org.springframework.util.StringUtils;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /*
  * A {@link Resource} implementation for resolving an artifact via maven coordinates.

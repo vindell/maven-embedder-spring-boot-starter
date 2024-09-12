@@ -15,12 +15,12 @@
  */
 package org.apache.maven.spring.boot.ext;
 
-import java.io.PrintStream;
-
 import org.apache.maven.cli.MavenCli;
 import org.apache.maven.shared.utils.logging.MessageUtils;
 import org.springframework.util.Assert;
 import org.springframework.util.StringUtils;
+
+import java.io.PrintStream;
 
 /**
  *	嵌入式的Maven集成（基于MavenCli）
