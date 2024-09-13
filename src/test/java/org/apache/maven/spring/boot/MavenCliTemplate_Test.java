@@ -19,7 +19,7 @@ import java.io.PrintStream;
 
 import org.apache.maven.spring.boot.ext.MavenCliTemplate;
 import org.apache.maven.spring.boot.ext.MavenResource;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 public class MavenCliTemplate_Test {
 

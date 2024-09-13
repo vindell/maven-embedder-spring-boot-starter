@@ -5,7 +5,7 @@ import java.io.PrintStream;
 
 import org.apache.maven.cli.MavenCli;
 import org.apache.maven.shared.utils.logging.MessageUtils;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 public class MavenCli_Test {
 
